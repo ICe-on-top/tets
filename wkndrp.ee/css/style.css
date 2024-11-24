@@ -1,0 +1,49 @@
+select:focus, textarea:focus, input:focus{
+	outline: none;
+}
+
+.bg-image {
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#indeterminate {
+	display: none;
+	position: absolute;
+	height: 5px;
+	background: #0284C7;
+	animation: first 1.5s infinite ease-out;
+}
+
+@keyframes first {
+	0% {
+		left: 0%;
+		width: 0%;
+	}
+	100% {
+		left: 0%;
+		width: 100%;
+	}
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #3F3F46;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #1e1e1f ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #141414;
+}
